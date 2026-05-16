@@ -1,7 +1,9 @@
 import regex as re
 class Model:
-    def __init__(self, email):
-        self.email = email
+    def __init__(self, email=None):
+        self.__email = None
+        if email is not None:
+            self.email = email
 
     @property
     def email(self):
@@ -19,6 +21,7 @@ class Model:
             f.write(self.email+'\n')
 
 # TEST
-# klasa = Model('ABC@mail.com')
+# klasa = Model()
+# klasa.email = 'ABC@mail.com'
 # print(klasa.email)
 # klasa.save()
