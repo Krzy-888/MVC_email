@@ -18,7 +18,7 @@ class Controller:
 # from model import Model
 # from view import View
 # root = tk.Tk()
-# model = Model('ABC@mail.com')
+# model = Model()
 # view = View(root)
 # controller = Controller(model,view)
 # view.set_controler(controller)
